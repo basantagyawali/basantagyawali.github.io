@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BG - Category</title>
+    <meta name="description" content="This project is based on renewable source of energy generation which will dominate in the  future world.">
+    <title>Energy Scavenging From Human Location - BG</title>
 
     <!-- bootstrap css file -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -25,10 +26,14 @@
     <!-- Prism for code prettifier -->
     <link rel="stylesheet" href="/css/prism.css">
 
+    <!-- Katex maths render -->
+    <link rel="stylesheet" href="/css/katex.min.css">
+    <link rel="stylesheet" href="/css/texmath.min.css">
+
     <!-- custom css file -->
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/blog.css">
-
+    
     <!-- generics -->
     <link rel="icon" href="/favicon-32.png" sizes="32x32">
     <link rel="icon" href="/favicon-57.png" sizes="57x57">
@@ -51,63 +56,10 @@
 
     <!-- Windows 8.1 + IE11 and above -->
     <meta name="msapplication-config" content="/ieconfig.xml" />
-    <style>
-        #posts .blog-entry .image {
-            overflow: hidden;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-            position: relative;
-            display: block;
-            width: 100%;
-            height: 300px;
-        }
-
-        #posts .blog-entry .heading a {
-            color: #000000;
-            font-size: 20px;
-            font-family: "Poppins", cursive;
-            -webkit-transition: .3s all ease;
-            -o-transition: .3s all ease;
-            transition: .3s all ease;
-        }
-
-        #posts .blog-entry .text span {
-            font-family: 'Poppins-Thin', sans-serif;
-            font-weight: lighter;
-            color: #6c757d;
-            font-size: 14px;
-        }
-
-        #posts .blog-entry .heading a:hover {
-            color: #524b19;
-            text-decoration: none;
-        }
-
-        #posts .text .para {
-            color: #414344;
-            font-size: 18px;
-            font-family: "Poppins", cursive;
-        }
-
-        #posts .pagination a {
-            text-decoration: none;
-            color: #4f5d6b;
-            float: left;
-            padding: 10px 15px;
-        }
-
-        #posts .pagination a:hover {
-            color: #511ccc;
-        }
-
-        #posts .pagination .active a {
-            background-color: #fff;
-        }
-    </style>
 </head>
 
 <body>
+    <div class="d-none" id="post-id" post-id="1"></div>
     <!-- navbar -->
     <nav class="navbar navbar-expand-md fixed-top not-shrink animated slideInDown">
         <div class="container">
@@ -129,10 +81,10 @@
                         <a class="nav-link posts" href="/index.html#about">about</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link posts" href="/index.html#gallery">gallery</a>
+                        <a class="nav-link posts" href="index.html#gallery">gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link posts" href="index.html#posts">posts</a>
+                        <a class="nav-link posts" href="/index.html#posts">posts</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link posts" href="/index.html#services">services</a>
@@ -149,21 +101,72 @@
     <section class="banner mb-5" id="home">
         <div class="text container">
             <div class="d-flex flex-column justify-content-end h-100">
-                <h1 class="animated fadeInDownBig">Category</h1>
+                <h1 class="animated fadeInDownBig mb-4">Energy Scavenging From Human Location</h1>
             </div>
         </div>
     </section>
 
     <section id="main">
-        <section id="posts" class="mb-5">
-            <div class="container">
-                <div class="post-list row d-flex">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 wow fadeInUp" id="md-html">
+                    <p id="post-date"><i class="far fa-clock"></i>&nbsp;Mar 08, 2021</p>
+                    <p><p class="hover-img"><img src="/posts/images/1/1-1.jpg" alt="Project photo" title="Prototype of energy generation" class="img-fluid"></p></p>
+<h3 class="mb-3 mt-5 toc-h3">Documentation and Slides of this project</h3>
+<p>Documentation: <a href="http://https://drive.google.com/file/d/1c4PORRpxyjt7fIzQP_eYcv-rwA7uu6ZT/view?usp=sharing" title="Google Drive Link">Click Here</a></p>
+<p>Slides: <a href="http://https://drive.google.com/file/d/1-e2zVXyFcEWntQ82_FWYV3UU8JiyJMUa/view?usp=sharing" title="Google Drive Link">Click Here</a></p>
+
+                    <hr class="mt-5">
+                    <div class="tag-list my-5">
+                        <span>Tags: </span>
+                        <span class="badge badge-secondary p-1" style="color:aliceblue; font-weight: bolder;">Renewable Energy </span>
+                        <span class="badge badge-secondary p-1" style="color:aliceblue; font-weight: bolder;">Energy Scavenging </span>
+                        <span class="badge badge-secondary p-1" style="color:aliceblue; font-weight: bolder;">Piezoelectric Generation</span>
+                        <span class="badge badge-secondary p-1" style="color:aliceblue; font-weight: bolder;">Waste Energy To Usefuk Energy </span>
+                        <span class="badge badge-secondary p-1" style="color:aliceblue; font-weight: bolder;">Power Source for Trekking</span>
+                    </div>
                 </div>
-                <div class="container d-flex justify-content-center">
-                    <ul class="pagination">
-                    </ul>
+                <div class="col-lg-4 sidebar wow fadeInUp">
+                    <div class="container wow fadeInUp">
+                        <form method="get" action="/search.html" class="blog-search-form">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search my posts" name="q" autocomplete="off">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="sidebar-box wow fadeInUp">
+                        <h3 class="heading-sidebar">Other Posts</h3>
+                        <ul class="categories p-0">
+                            <li>
+                                <a href="/category-post.html?category=python">
+                                    Python
+                                    &nbsp;<span>(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/category-post.html?category=project">
+                                    Project
+                                    &nbsp;<span>(1)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="posts wow fadeInUp" id="recent-posts">
+                        <!-- recent posts created here dynamically -->
+                    </div>
+                    <div class="posts wow fadeInUp" id="related-posts">
+                        <!-- related posts created here dynamically -->
+                    </div>
+                    <div id="dinamicMenu"></div>
                 </div>
-        </section>
+
+            </div>
+        </div>
     </section>
 
 <!-- Contact -->
@@ -261,8 +264,9 @@
     <script type="text/javascript" src="/js/wow.min.js"></script>
     <script src="/js/jquery-dynamic-content-menu.js"></script>
     <script src="/js/prism.js"></script>
+    <script src="/js/fuzzyset.js"></script>
+    <script src="/js/related-post.js"></script>
     <script src="/js/main.js"></script>
-    <script src="/js/category-handler.js"></script>
 </body>
 
 </html>
